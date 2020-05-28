@@ -5,10 +5,12 @@ const passport = require('passport');
 const keys = require('./config/keys.js');
 const bodyParser = require('body-parser');
 
-require('./models/User.js');
+require('./models/User');
+require('./models/Survey')
 require('./services/passport.js');
 const authRoute = require('./routes/authRoutes');
 const billingRoute = require('./routes/billingRoutes');
+const surveyRoute = require('./routes/surveyRoutes')
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(keys.mongoURI, { useNewUrlParser: true });
@@ -27,6 +29,7 @@ app.use(passport.session());
 
 app.use(authRoute);
 app.use(billingRoute);
+app.use(surveyRoute);
 
 if (process.env.NODE_ENV === 'production') {
 	// NOTE: THỨ TỰ QUAN TRỌNG
