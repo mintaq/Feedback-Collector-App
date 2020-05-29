@@ -64,7 +64,7 @@ router.post('/api/surveys/webhooks', async (req, res) => {
 			Survey.updateOne(
 				{
 					_id: surveyId,
-					recipients: { $elemMatch: { email, response: false } },
+					recipients: { $elemMatch: { email, responded: false } },
 				},
 				{
 					$inc: { [choice]: 1 },
