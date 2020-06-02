@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchSurveys } from '../../store/actions';
+import SurveyCard from './SurveyCard';
 
 class SurveyList extends Component {
 	async componentDidMount() {
@@ -8,21 +9,7 @@ class SurveyList extends Component {
 	}
 
 	renderSurveys() {
-		return this.props.surveys.reverse().map(survey => {
-			return (
-				<div key={survey._id} className="card darken-1">
-					<div className="card-content">
-						<span className="card-title">{survey.title}</span>
-						<p>{survey.body}</p>
-						<p className="right">Ngày gửi: {new Date(survey.dateSent).toLocaleDateString()}</p>
-					</div>
-					<div className="card-action">
-						<a>Yes: {survey.yes}</a>
-						<a>No: {survey.no}</a>
-					</div>
-				</div>
-			);
-		});
+		return this.props.surveys.reverse().map(survey => <SurveyCard key={survey._id} {...survey} />);
 	}
 
 	render() {
