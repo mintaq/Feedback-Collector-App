@@ -32,7 +32,7 @@ class HeaderClass extends Component {
 				);
 			default:
 				return [
-					<Menu.Item key="1" style={{ float: 'right', backgroundColor:'#f39c12' }}>
+					<Menu.Item key="1" style={{ float: 'right', backgroundColor: '#f39c12' }}>
 						<Button type="link" ghost>
 							<StripeWrapper />
 						</Button>
@@ -51,8 +51,9 @@ class HeaderClass extends Component {
 		return (
 			<Menu theme="dark" mode="horizontal" onClick={this.handleClick} selectedKeys={[this.state.current]}>
 				<Menu.Item key="logo">
-					<Link to={'/'} className="brand-logo" style={{ padding: '0 10px' }}>
-						eCollector
+					<Link to={'/'}>
+						<span style={{ color: 'orange' }}>e</span>
+						<span>Collector</span>
 					</Link>
 				</Menu.Item>
 				{this.renderContent()}
