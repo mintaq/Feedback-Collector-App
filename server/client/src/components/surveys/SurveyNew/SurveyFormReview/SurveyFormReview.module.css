@@ -1,0 +1,12 @@
+.container {
+  margin: 10px;
+}
+
+.container label {
+  font-size: 15px;
+}
+
+.container p {
+  font-size: 20px;
+  border-bottom: 1px solid #ecf0f1;
+}

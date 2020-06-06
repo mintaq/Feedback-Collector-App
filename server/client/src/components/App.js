@@ -6,7 +6,7 @@ import { Layout } from 'antd';
 import Navbar from './Navbar/Navbar';
 import Landing from './Landing/Landing';
 import Dashboard from './Dashboard';
-import SurveyNew from './surveys/SurveyNew';
+import SurveyNew from './surveys/SurveyNew/SurveyNew';
 import './App.css';
 const { Header, Content, Footer } = Layout;
 
