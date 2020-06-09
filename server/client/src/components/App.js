@@ -29,7 +29,7 @@ class App extends Component {
 							<Route path="/surveys/new" component={SurveyNew}></Route>
 						</div>
 					</Content>
-					<Footer className="Footer">eCollector ©2020 Created by Minh Tran</Footer>
+					<Footer className="Footer">eCollector ©2020 Created by <a href='https://github.com/mintaq/Feedback-Collector-App' target='_blank'>Minh Tran</a></Footer>
 				</Layout>
 			</BrowserRouter>
 		);

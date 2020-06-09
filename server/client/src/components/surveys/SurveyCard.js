@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Divider, Modal, Alert, Button } from 'antd';
-import { CloseOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
+import { CloseOutlined } from '@ant-design/icons';
 import { connect } from 'react-redux';
 import * as actions from '../../store/actions';
 
