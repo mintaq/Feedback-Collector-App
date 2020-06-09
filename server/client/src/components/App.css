@@ -31,3 +31,8 @@
 .ant-menu.ant-menu-dark .ant-menu-item-selected {
 	background-color: transparent;
 }
+
+.ant-notification-notice-message,
+.ant-notification-notice-close {
+  color: salmon;
+}

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Button, Anchor } from 'antd';
+import { Button } from 'antd';
 import { HeartTwoTone } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
 import Typical from 'react-typical';
+import { connect } from 'react-redux';
 import './Landing.css';
 
 // const { Link } = Anchor;
 
-const Landing = () => {
+const Landing = props => {
 	return (
 		<div className="Landing">
 			<h1>
@@ -26,12 +26,21 @@ const Landing = () => {
 				icon={<HeartTwoTone twoToneColor="#f39c12" />}
 				size="large"
 			>
-				<Link to="/surveys" style={{ color: '#f39c12', marginLeft: '10px', fontSize: '18px' }}>
+				<a
+					href={props.auth ? '/surveys' : '/auth/google'}
+					style={{ color: '#f39c12', marginLeft: '10px', fontSize: '18px' }}
+				>
 					TẠO KHẢO SÁT
-				</Link>
+				</a>
 			</Button>
 		</div>
 	);
 };
 
-export default Landing;
+const mapStateToProps = state => {
+	return {
+		auth: state.auth.auth,
+	};
+};
+
+export default connect(mapStateToProps)(Landing);

@@ -4,10 +4,7 @@ import { Link } from 'react-router-dom';
 import StripeWrapper from '../StripeWrapper';
 import './Navbar.css';
 
-import { Layout, Menu, Button, Anchor } from 'antd';
-
-const { Header } = Layout;
-const MenuItemGroup = Menu.ItemGroup;
+import { Menu, Button } from 'antd';
 
 class HeaderClass extends Component {
 	state = {
