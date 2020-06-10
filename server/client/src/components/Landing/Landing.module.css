@@ -1,0 +1,19 @@
+.Landing {
+  text-align: center;
+  margin-top: 10%;
+  width: 100vw;
+  margin-left: -50px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.Landing h1 {
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+
+.Landing p {
+  font-size: 20px;
+  color: #dfe6e9;
+}
+/*# sourceMappingURL=Landing.module.css.map */

@@ -3,13 +3,13 @@ import { Button } from 'antd';
 import { HeartTwoTone } from '@ant-design/icons';
 import Typical from 'react-typical';
 import { connect } from 'react-redux';
-import './Landing.css';
+import styles from './Landing.module.css';
 
 // const { Link } = Anchor;
 
 const Landing = props => {
 	return (
-		<div className="Landing">
+		<div className={styles.Landing}>
 			<h1>
 				<span style={{ color: 'orange' }}>e</span>
 				<span style={{ color: 'white' }}>Collector</span>
