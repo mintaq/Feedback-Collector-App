@@ -15,7 +15,7 @@ const Landing = props => {
 				<span style={{ color: 'white' }}>Collector</span>
 			</h1>
 			<Typical
-				steps={['Hãy lắng nghe ý kiến từ khách hàng của bạn!', 2000, 'Dùng thử miễn phí ngay hôm nay!', 1000]}
+				steps={['Hãy lắng nghe ý kiến từ khách hàng của bạn!', 2000, 'Dùng thử miễn phí ngay hôm nay!', 1500]}
 				loop={Infinity}
 				wrapper="p"
 			/>

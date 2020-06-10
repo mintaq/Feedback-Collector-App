@@ -29,7 +29,6 @@ class SurveyList extends Component {
 				<div className={styles.CardContainer}>
 					<Card style={{ backgroundColor: 'rgba(255, 255, 255, 0.9)' }}>
 						<p>
-							{' '}
 							Hiện bạn chưa tạo một khảo sát nào. Bấm vào nút tạo ở góc dưới bên phải để tạo khảo sát mới!
 						</p>
 					</Card>
