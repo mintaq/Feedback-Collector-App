@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Card, Divider, Modal, Alert, Button } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
 import { connect } from 'react-redux';
-import * as actions from '../../store/actions';
+import * as actions from '../../../../store/actions';
 
 class SurveyCard extends Component {
 	state = { visible: false };

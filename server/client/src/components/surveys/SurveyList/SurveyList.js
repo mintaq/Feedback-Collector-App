@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchSurveys } from '../../../store/actions';
-import SurveyCard from '../SurveyCard';
+import SurveyCard from './SurveyCard/SurveyCard.js';
 import { Card } from 'antd';
 import styles from './SurveyList.module.css';
 
